@@ -725,12 +725,4 @@ class Animal {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-	body {
-		margin: 20px;
-	}
-	
-	* {
-		font-size: 13px;
-		line-height: 1.8em;
-	}
 </style>
