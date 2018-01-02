@@ -18,6 +18,133 @@
 				</div>
 			</div>
 		</div>
+
+		<h3>ES6（es2015）</h3>
+		<h4>声明变量</h4>
+		<div>
+			<Poptip placement="right-end">
+				<Button type="ghost">let</Button>
+				<div slot="title">
+					let
+				</div>
+				<div slot="content">
+					let是块级作用域变量，用它所声明的变量，只在let命令所在的代码块内有效。
+				</div>
+			</Poptip>
+			<Poptip placement="right-end">
+				<Button type="ghost">const</Button>
+				<div slot="title">
+					const
+				</div>
+				<div slot="content">
+					当我们尝试去改变用const声明的常量时，浏览器就会报错。<br /> const有一个很好的应用场景，就是当我们引用第三方库的时声明的变量，用const来声明可以避免未来不小心重命名而导致出现bug。
+				</div>
+			</Poptip>
+			<!--
+			<Tag checkable color="blue">const</Tag>
+			<Tag checkable color="default">class</Tag>
+			<Tag checkable color="default">extends</Tag>
+			<Tag checkable color="default">super</Tag>
+			<Tag checkable color="red">arrow functions</Tag>
+			<Tag checkable color="default">template string</Tag>
+			<Tag checkable color="default">destructuring</Tag>
+			<Tag checkable color="default">default</Tag>
+			<Tag checkable color="default">rest arguments</Tag>
+			-->
+		</div><br />
+		<h4>类的概念</h4>
+		<div>
+			<Poptip placement="right-end">
+				<Button type="ghost">class, extends, super</Button>
+				<div slot="content">
+					<pre>
+class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        console.log(this.type + ' says ' + say)
+    }
+}
+
+let animal = new Animal()
+animal.says('hello') //animal says hello
+
+class Cat extends Animal {
+    constructor(){
+        super()
+        this.type = 'cat'
+    }
+}
+
+let cat = new Cat()
+cat.says('hello') //cat says hello
+					</pre>
+					<div>
+						上面代码首先用class定义了一个“类”，可以看到里面有一个constructor方法，这就是构造方法，而this关键字则代表实例对象。<br />
+						简单地说，constructor内定义的方法和属性是实例对象自己的，而constructor外定义的方法和属性则是所有实例对象可以共享的。<br />
+						Class之间可以通过extends关键字实现继承，这比ES5的通过修改原型链实现继承，要清晰和方便很多。<br />
+						上面定义了一个Cat类，该类通过extends关键字，继承了Animal类的所有属性和方法。<br />
+						super关键字，它指代父类的实例（即父类的this对象）。<br />
+						子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。<br />
+						ES6的继承机制，实质是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this。
+					</div>
+				</div>
+			</Poptip>
+		</div>
+		<br />
+		<h4>箭头函数</h4>
+		<div>
+			<Poptip placement="right-end">
+				<Button type="ghost">arrow function</Button>
+				<div slot="title">
+					arrow function
+				</div>
+				<div slot="content">
+					<pre>
+function(x, y) { 
+    x++;
+    y--;
+    return x + y;
+}
+(x, y) => {x++; y--; return x+y}
+					</pre>
+					除了看上去更简洁以外，arrow function还有一项超级无敌的功能！<br />
+长期以来，JavaScript语言的this对象一直是一个令人头痛的问题，在对象方法中使用this，必须非常小心。例如：
+					<pre>
+class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        setTimeout(function(){
+            console.log(this.type + ' says ' + say)
+        }, 1000)
+    }
+}
+
+ var animal = new Animal()
+ animal.says('hi')  //undefined says hi
+					</pre>
+					用箭头函数的写法：
+					<pre>
+class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        setTimeout( () => {
+            console.log(this.type + ' says ' + say)
+        }, 1000)
+    }
+}
+ var animal = new Animal()
+ animal.says('hi')  //animal says hi
+					</pre>
+				</div>
+			</Poptip>
+		</div>
+		<div style="height: 200px;"></div>
 	</div>
 </template>
 
@@ -582,6 +709,9 @@
 			}
 		},
 		methods: {
+			ab() {
+				alert("===")
+			},
 			show(content = '未录入') {
 				this.$Modal.info({
 					title: '说明',
@@ -595,16 +725,12 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-	.hello {
-		padding: 20px;
+	body {
+		margin: 20px;
 	}
 	
-	h2,
-	h3,
-	h4 {
-		padding: 20px 0px 10px 0;
-	}
-	.ivu-table {
-		font-size: 16px;
+	* {
+		font-size: 13px;
+		line-height: 1.8em;
 	}
 </style>
