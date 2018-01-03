@@ -1,200 +1,25 @@
 <template>
 	<div id="app" class="layout-box">
-		<div class="layout-main">
-			<div class="layout-main-content">
-				<div class="layout-main-content-main">
-					<div class="layout-main-content-main-content">
-						<router-view></router-view>
-					</div>
-				</div>
-				<div class="layout-main-content-left">
-					<div class="nav">
-				<ul>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-					<li>AAABBB</li>
-				</ul>
-			</div>
-				</div>
-			</div>
-		</div>
 		<div class="layout-left">
 			<div class="nav">
 				<ul>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
-					<li>ASD</li>
+					<li v-for="(item,index) in navData" :class="{ active: item.selected}" @click="setNav(index)">{{item.name}}</li>
 				</ul>
+			</div>
+		</div>
+		<div class="layout-left-secondary">
+			<div class="nav">
+				<ul v-if="navChildrenData.length > 0">
+					<li v-for="(item,index) in navChildrenData" :class="{ active: item.selected}">{{item.name}}</li>
+				</ul>
+				<div v-else>
+					请先选择分类
+				</div>
+			</div>
+		</div>
+		<div class="layout-main">
+			<div class="layout-main-content">
+				<router-view></router-view>
 			</div>
 		</div>
 	</div>
@@ -202,59 +27,40 @@
 
 <script>
 	export default {
-		name: 'app'
+		name: 'app',
+		data() {
+			return {
+				navData: [{
+					name: 'ES6',
+					src: 'es6',
+					children: [{
+						name: 'let const',
+						src: 'let'
+					}]
+				}, {
+					name: 'Date',
+					src: 'date',
+					children: [{
+						name: 'constructor',
+						src: 'constructor'
+					}]
+				}],
+				navChildrenData: [],
+			}
+		},
+		methods: {
+			setNav(index) {
+				for(let i = 0; i < this.navData.length; i++) {
+					this.navData[i]['selected'] = false;
+				}
+				this.navData[index]['selected'] = true;
+				this.navChildrenData = this.navData[index]['children'];
+			}
+		},
+
 	}
 </script>
 
 <style>
-	html,
-	body {
-		height: 100%;
-	}
-	
-	.layout-box {
-		height: 100%;
-	}
-	
-	.layout-left {
-		width: 200px;
-		height: 100%;
-		overflow-y: auto;
-		background: #F0f0f0;
-		margin-left: -100%;
-		float: left;
-	}
-	
-	.layout-main {
-		height: 100%;
-		float: left;
-	}
-	
-	.layout-main-content {
-		padding-left: 200px;
-		height: 100%;
-		overflow: auto;
-	}
-	
-	.layout-main-content-left {
-		width: 200px;
-		height: 100%;
-		overflow-y: auto;
-		background: #F8F8F8;
-		margin-left: -100%;
-		float: left;
-	}
-	
-	.layout-main-content-main {
-		width: 100%;
-		height: 100%;
-		float: left;
-	}
-	
-	.layout-main-content-main-content {
-		margin-left: 200px;
-		max-height: 100%;
-		overflow: auto;
-	}
-	
+
 </style>
